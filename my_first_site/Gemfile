@@ -1,0 +1,5 @@
+source 'https://rubygems.org'
+
+gem 'sinatra'
+
+# when adding gem here just run bundle on terminal

@@ -1,0 +1,18 @@
+<h3>Another page</h3>
+
+<a href="/">Home</a>
+
+<% if @page_id > 0 %>
+  <!-- goes to current page +1 and on and on -->
+  <a href="/second/ <%= @page_id + 1 %>"> <!--used erb tags as placeholder -->
+    go to page <%= @page_id + 1 %>
+  </a>
+<% end %>
+
+<% if @page_id > 10 %>
+  <a href="/second/ <%= @page_id - 1 %>"> <!--used erb tags as placeholder -->
+    go back a page <%= @page_id - 1 %>
+  </a>
+<% end %>
+
+<!-- something is not inside erb tags it is just plain html -->
