@@ -9,7 +9,11 @@ get '/two' do
   erb :two
 end
 
-get '/three' do
-  @three = 'Three'
-  erb :three
+get '/form' do
+  @form = 'Form'
+  erb :form
+end
+
+post '/form' do
+  "You said '#{params[:special]}'"
 end
