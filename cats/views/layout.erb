@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= @page_title %></title>
+    <link rel="stylesheet" href="/css/cats.css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body>
+    <div id="wrap">
+      <%= yield %>
+      <nav>
+        <a href= "/me">Me</a>
+        <a href= "/">Cats</a>
+        <a href= "/dogs">Dogs</a>
+      </nav>
+    </div>
+  </body>
+</html>

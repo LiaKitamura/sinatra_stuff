@@ -1,0 +1,15 @@
+require 'sinatra'
+
+class Sold
+
+  def initialize
+    @sold = false
+  end
+
+  def avail
+    @sold = true
+  end
+
+end
+puts 'sold'
+Sold.new

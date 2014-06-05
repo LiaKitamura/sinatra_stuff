@@ -1,19 +1,26 @@
-require 'sinatra'
 
-get '/' do
-  erb :index
-end
+class Site < Sinatra::Base
 
-get '/two' do
-  @two = 'Two'
-  erb :two
-end
+  get '/' do
+    erb :index
+  end
 
-get '/form' do
-  @form = 'Form'
-  erb :form
-end
+  get '/two' do
+    @two = 'Two'
+    erb :two
+  end
 
-post '/form' do
-  "You said '#{params[:special]}'"
+  get '/dogs' do
+    @dogs = 'Dogs'
+    erb :dogs
+  end
+
+  get '/form' do
+    @form = 'Form'
+    erb :form
+  end
+
+  post '/form' do
+    "Submission: '#{params[:special]}'"
+  end
 end

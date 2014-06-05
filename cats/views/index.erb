@@ -1,0 +1,6 @@
+<h1>All about cats</h1>
+<%= unless @width.to_i.zero? && @height.to_i.zero? %>
+  <div class="photo">
+    <img src="http://placekitten.com/<%= @width %>/<%= @height %>"/>
+  </div>
+<%= end %>

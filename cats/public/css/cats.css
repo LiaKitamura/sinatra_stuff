@@ -1,0 +1,33 @@
+#wrap {
+  width: 980px;
+  margin: 0 auto;
+}
+
+#wrap h1 {
+  font-weight: 300;
+  font-family: Helvetica;
+  border-bottom: 1px solid #333333;
+  padding: 1em;
+  padding-bottom: .5em;
+}
+
+/***     NAV      ***/
+.photo {
+   border: 1px solid #333333;
+   padding: 8px;
+   width: 250px;
+   height: auto;
+   font-size: 0;
+   float: left;
+   margin-right: 10px;
+}
+
+
+/***     IMG     ***/
+
+#kitty {
+  text-align: center
+}
+#k2 {
+  margin: auto 2em;
+}

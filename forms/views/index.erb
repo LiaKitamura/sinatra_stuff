@@ -1,0 +1,34 @@
+<!-- here we are posting information to home page-->
+<form action="/about" method="post">
+  <!-- everytime a form gets sent it gets a new value. names have to be unique because sinatra makes the params hash and needs to distinquish each other-->
+
+  <p>
+    <label>Name:</label>
+    <input type="text" value="" name="name" />
+  </p>
+
+  <p>
+    <!-- inputs are always strings so a number inputed will be a string -->
+    <label>Age:</label>
+    <input type="text" value="" name="age" />
+  </p>
+
+  <p>
+    <label>Programming Language</label>
+    <select name="language">
+      <!-- only option can go inside select tag -->
+      <!-- value is  -->
+      <option value="Ruby">Ruby</option>
+      <option value="JavaScript">JavaScript</option>
+      <option value="Whitespace"> </option>
+      <option value="BrainF**k">>><<\|</option>
+    </select>
+  </p>
+
+  <p>
+    <label>Bio:</label><br />
+    <textarea name="bio" rows="8" cols="40"></textarea>
+  </p>
+
+  <input type="submit" value="Send Data" />
+</form>

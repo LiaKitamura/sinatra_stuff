@@ -1,0 +1,29 @@
+.title,
+.about {
+  text-align: center;
+  margin-bottom: .8em;
+  padding-bottom: .3em;
+}
+
+.nav {
+  text-align: center;
+  margin: 2em auto;
+  background-color: lightcyan;
+  padding: 1em;
+  border-radius: 1em;
+}
+
+.nav a {
+  font-size: 1.3em;
+  text-decoration: none;
+  color: purple;
+}
+
+.nav a:hover {
+  background-color:lightcyan;
+  color: black;
+}
+
+footer {
+  border-top: 1px solid black;
+}
